@@ -1,2 +1,2 @@
 # BankerItems
- Custom items for the Banker character
+The custom items used by the Banker custom character for Enter the Gungeon.
