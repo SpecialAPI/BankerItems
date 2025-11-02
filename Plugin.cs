@@ -12,6 +12,7 @@ using UnityEngine;
 namespace BankerItems
 {
     [BepInPlugin(GUID, NAME, VERSION)]
+    [BepInDependency(ETGModMainBehaviour.GUID)]
     [BepInDependency(Alexandria.Alexandria.GUID)]
     public class Plugin : BaseUnityPlugin
     {
