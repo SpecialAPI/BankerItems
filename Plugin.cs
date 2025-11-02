@@ -1,5 +1,5 @@
-﻿using BankerItems.ItemAPI;
-using BankerItems.SoundAPI;
+﻿using Alexandria.ItemAPI;
+using Alexandria.SoundAPI;
 using BepInEx;
 using HarmonyLib;
 using System;
@@ -12,6 +12,7 @@ using UnityEngine;
 namespace BankerItems
 {
     [BepInPlugin(GUID, NAME, VERSION)]
+    [BepInDependency(Alexandria.Alexandria.GUID)]
     public class Plugin : BaseUnityPlugin
     {
         public const string GUID = "spapi.etg.bankeritems";
@@ -28,8 +29,6 @@ namespace BankerItems
         {
             interestRoundsUnlocked = ETGModCompatibility.ExtendEnum<GungeonFlags>(GUID, "InterestRoundsUnlocked");
 
-            SoundManager.Init();
-            ItemBuilder.Init();
             new Harmony(GUID).PatchAll();
 
             BankerItem.Init();
