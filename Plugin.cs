@@ -31,6 +31,7 @@ namespace BankerItems
             interestRoundsUnlocked = ETGModCompatibility.ExtendEnum<GungeonFlags>(GUID, "InterestRoundsUnlocked");
 
             new Harmony(GUID).PatchAll();
+            ETGMod.Assets.SetupSpritesFromAssembly(typeof(Plugin).Assembly, "BankerItems/Resources/MTGAPISpriteRoot");
 
             BankerItem.Init();
             BankerGun.Init();

@@ -250,6 +250,13 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
+    <EmbeddedResource Include="Resources\MTGAPISpriteRoot\WeaponCollection\interest_gun_fire_001.jtk2d" />
+    <EmbeddedResource Include="Resources\MTGAPISpriteRoot\WeaponCollection\interest_gun_fire_002.jtk2d" />
+    <EmbeddedResource Include="Resources\MTGAPISpriteRoot\WeaponCollection\interest_gun_idle_001.jtk2d" />
+    <EmbeddedResource Include="Resources\MTGAPISpriteRoot\WeaponCollection\interest_gun_reload_001.jtk2d" />
+    <EmbeddedResource Include="Resources\MTGAPISpriteRoot\WeaponCollection\interest_gun_reload_002.jtk2d" />
+    <EmbeddedResource Include="Resources\MTGAPISpriteRoot\WeaponCollection\interest_gun_reload_003.jtk2d" />
+    <EmbeddedResource Include="Resources\MTGAPISpriteRoot\WeaponCollection\interest_gun_reload_004.jtk2d" />
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="Resources\heart_of_gold_001.png" />
@@ -283,6 +290,14 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="icon.ico" />
+    <EmbeddedResource Include="Resources\MTGAPISpriteRoot\Ammonomicon Encounter Icon Collection\interest_gun_idle_001.png" />
+    <EmbeddedResource Include="Resources\MTGAPISpriteRoot\WeaponCollection\interest_gun_fire_001.png" />
+    <EmbeddedResource Include="Resources\MTGAPISpriteRoot\WeaponCollection\interest_gun_fire_002.png" />
+    <EmbeddedResource Include="Resources\MTGAPISpriteRoot\WeaponCollection\interest_gun_idle_001.png" />
+    <EmbeddedResource Include="Resources\MTGAPISpriteRoot\WeaponCollection\interest_gun_reload_001.png" />
+    <EmbeddedResource Include="Resources\MTGAPISpriteRoot\WeaponCollection\interest_gun_reload_002.png" />
+    <EmbeddedResource Include="Resources\MTGAPISpriteRoot\WeaponCollection\interest_gun_reload_003.png" />
+    <EmbeddedResource Include="Resources\MTGAPISpriteRoot\WeaponCollection\interest_gun_reload_004.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Import Project="packages\BepInEx.Core.5.4.21\build\BepInEx.Core.targets" Condition="Exists('packages\BepInEx.Core.5.4.21\build\BepInEx.Core.targets')" />

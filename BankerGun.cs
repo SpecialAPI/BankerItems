@@ -53,7 +53,7 @@ namespace BankerItems
             projectile.baseData.damage = 6f;
             projectile.baseData.speed = 23f;
             gun.DefaultModule.ammoType = GameUIAmmoType.AmmoType.CUSTOM;
-            gun.DefaultModule.customAmmoType = CustomClipAmmoTypeToolbox.AddCustomAmmoType("interest", "BankerItems/Resources/interest_clip.png", "BankerItems/Resources/interest_clip_empty.png");
+            gun.DefaultModule.customAmmoType = CustomClipAmmoTypeToolbox.AddCustomAmmoType("interest", "BankerItems/Resources/interest_clip", "BankerItems/Resources/interest_clip_empty");
             var animator = projectile.GetAnySprite().gameObject.AddComponent<tk2dSpriteAnimator>();
             animator.Library = projectile.GetAnySprite().gameObject.AddComponent<tk2dSpriteAnimation>();
             animator.Library.clips = new tk2dSpriteAnimationClip[]
